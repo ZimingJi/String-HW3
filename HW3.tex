@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+\title{Homework 3}
+\author{Ziming Ji\\ 
+PHY 539: Introduction to String Theory}
+ 
+\maketitle
+ 
+\section{Problem 1} 
+\begin{paragraph}{a)}
+It is not hard to show that under $z\to \frac{a z+b}{c z+d}$, the cross ratio becomes
+\begin{equation}
+\frac{\left(\frac{a z_1+b}{c z_1+d}-\frac{a z_2+b}{c z_2+d}\right) \left(\frac{a z_3+b}{c z_3+d}-\frac{a z_4+b}{c z_4+d}\right)}{\left(\frac{a z_1+b}{c z_1+d}-\frac{a z_3+b}{c z_3+d}\right) \left(\frac{a z_2+b}{c z_2+d}-\frac{a z_4+b}{c z_4+d}\right)}=\frac{\left(z_1-z_2\right) \left(z_3-z_4\right) (b c-a d)^2}{\left(z_1-z_3\right) \left(z_2-z_4\right) (b c-a d)^2}=\frac{\left(z_1-z_2\right) \left(z_3-z_4\right)}{\left(z_1-z_3\right) \left(z_2-z_4\right)}.
+\end{equation}
+\end{paragraph}
+\begin{paragraph}{b)}
+We set the transformation to be $z\to \frac{a z+b}{c z+d}$. Solving the set of equations
+\begin{equation}
+a z_1+b=0\land a z_2+b=c z_2+d\land c z_3+d=0\land a d-b c=1,
+\end{equation}
+we have 
+\begin{equation}
+\begin{aligned}[t]
+a\to -\frac{\sqrt{z_3-z_2}}{\sqrt{\left(z_1-z_2\right) \left(z_1-z_3\right)}},b\to \frac{z_1 \sqrt{z_3-z_2}}{\sqrt{\left(z_1-z_2\right) \left(z_1-z_3\right)}},\\
+c\to \frac{z_2-z_1}{\sqrt{\left(z_1-z_2\right) \left(z_1-z_3\right)} \sqrt{z_3-z_2}},d\to \frac{\left(z_1-z_2\right) z_3}{\sqrt{\left(z_1-z_2\right) \left(z_1-z_3\right)} \sqrt{z_3-z_2}}
+\end{aligned}
+\end{equation}
+or
+\begin{equation}
+\begin{aligned}[t]
+a\to \frac{\sqrt{z_3-z_2}}{\sqrt{\left(z_1-z_2\right) \left(z_1-z_3\right)}},b\to -\frac{z_1 \sqrt{z_3-z_2}}{\sqrt{\left(z_1-z_2\right) \left(z_1-z_3\right)}},\\
+c\to \frac{z_1-z_2}{\sqrt{\left(z_1-z_2\right) \left(z_1-z_3\right)} \sqrt{z_3-z_2}},d\to \frac{\left(z_2-z_1\right) z_3}{\sqrt{\left(z_1-z_2\right) \left(z_1-z_3\right)} \sqrt{z_3-z_2}}.
+\end{aligned}
+\end{equation}
+\end{paragraph}
+\end{document}
