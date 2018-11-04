@@ -57,9 +57,13 @@ c\to \frac{z_1-z_2}{\sqrt{\left(z_1-z_2\right) \left(z_1-z_3\right)} \sqrt{z_3-z
 \end{equation}
 \end{paragraph}
 \section{Problem 2}
-We refer to the b c system as a $2D$ field theory with a Grassmann action
+We refer to the $b$ $c$ system as a $2D$ field theory with a Grassmann action
 \begin{equation}
 S=\frac{1}{2\pi } \int d^2 z \,\,b  \bar{\partial} c
+\end{equation}
+The contraction of $b$ and $c$ field is 
+\begin{equation}
+(b(z)c(\omega)-:b(z)c(\omega):)(-1)^{\#}=\frac{1}{z-\omega}.
 \end{equation}
 \begin{paragraph}{a)}
 \begin{equation}
@@ -75,10 +79,36 @@ The full contraction(quartic) part is
 \lambda ^2 \frac{\partial }{\partial z}\frac{\partial }{\partial \omega }\frac{1}{(z-\omega ) (z-\omega )}-\lambda  \frac{\partial }{\partial \omega }\frac{\frac{\partial }{\partial z}\frac{1}{z-\omega }}{z-\omega }-\lambda  \frac{\partial }{\partial z}\frac{\frac{\partial }{\partial \omega }\frac{1}{z-\omega }}{z-\omega }+\frac{\partial }{\partial z}\frac{1}{z-\omega } \frac{\partial }{\partial \omega }\frac{1}{z-\omega }=\frac{-6 (\lambda -1) \lambda -1}{(z-\omega )^4}
 \end{aligned}
 \end{equation}
-The quadratic part is
+The other terms are(omitting normal ordering symbols for simplicity)
 \begin{equation}
 \begin{aligned}[t]
-123
+c(\omega ) \frac{\partial b(z)}{\partial z} \frac{\partial }{\partial \omega }\frac{1}{z-\omega }+c(z) \frac{\partial b(\omega )}{\partial \omega } \frac{\partial }{\partial z}\frac{1}{z-\omega }=\frac{c(\omega ) b''(\omega )-b'(\omega ) c'(\omega )}{z-\omega }+O\left((z-\omega )^0\right)\\
+-\lambda  \frac{\partial }{\partial z}\left(b(z) c(\omega ) \frac{\partial }{\partial \omega }\frac{1}{z-\omega }+\frac{c(z) \frac{\partial b(\omega )}{\partial \omega }}{z-\omega }\right)=\frac{2 \lambda  b(\omega ) c(\omega )}{(z-\omega )^3}+\frac{2 \lambda  c(\omega ) b'(\omega )}{(z-\omega )^2}+O\left((z-\omega )^0\right)\\
+-\lambda  \frac{\partial }{\partial \omega }\left(b(\omega ) c(z) \frac{\partial }{\partial z}\frac{1}{z-\omega }+\frac{c(\omega ) \frac{\partial b(z)}{\partial z}}{z-\omega }\right)=\frac{2 \lambda  b(\omega ) c(\omega )}{(z-\omega )^3}+\frac{2 \lambda  b(\omega ) c'(\omega )}{(z-\omega )^2}\\
++\frac{\lambda  \left(b(\omega ) c''(\omega )-c(\omega ) b''(\omega )\right)}{z-\omega }+O\left((z-\omega )^0\right)\\
+\lambda ^2 \frac{\partial }{\partial z}\frac{\partial }{\partial \omega }\left(\frac{b(\omega ) c(z)}{z-\omega }+\frac{b(z) c(\omega )}{z-\omega }\right)=-\frac{4 \left(\lambda ^2 b(\omega ) c(\omega )\right)}{(z-\omega )^3}+\frac{\lambda ^2 \left(-2 c(\omega ) b'(\omega )-2 b(\omega ) c'(\omega )\right)}{(z-\omega )^2}\\
++O\left((z-\omega )^0\right)
+\end{aligned}
+\end{equation}
+In conclusion, we have
+\begin{equation}
+\begin{aligned}[t]
+T(z)T(\omega)\sim \frac{-6 (\lambda -1) \lambda -1}{(z-\omega )^4}-\frac{4 ((\lambda -1) \lambda  b(\omega ) c(\omega ))}{(z-\omega )^3}-\frac{2 \left((\lambda -1) \lambda  \left(c(\omega ) b'(\omega )+b(\omega ) c'(\omega )\right)\right)}{(z-\omega )^2}\\
++\frac{-(\lambda -1) c(\omega ) b''(\omega )-b'(\omega ) c'(\omega )+\lambda  b(\omega ) c''(\omega )}{z-\omega }
+\end{aligned}
+\end{equation}
+\end{paragraph}
+\begin{paragraph}{b)}
+\begin{equation}
+\begin{aligned}[t]
+T(z)=\sum\limits_{m=-\infty}^{\infty}\frac{L_m}{z^{m+2}}\,\, ,\qquad L_m=\frac{1}{2\pi i}\oint dz \,\, z^{m+1}T(z)
+\end{aligned}
+\end{equation}
+We can just expand $T(z)$ in terms of $b$ and $c$ modes and pick up the power $-(m+2)$ terms.
+\begin{equation}
+\begin{aligned}[t]
+T(z)= : (\partial_z b) c(z): - \lambda \partial_z : b c (z):=\sum\limits_l\sum\limits_k :\frac{-(k+\lambda)b_k}{z^{k+\lambda+1}}\frac{c_l}{z^{l+1-\lambda}}:\\
+-:\lambda(\frac{-(k+\lambda)b_k}{z^{k+\lambda+1}}\frac{c_l}{z^{l+1-\lambda}}+\frac{b_k}{z^{k+\lambda}}\frac{-(l+1-\lambda)c_l}{z^{l+2-\lambda}}):
 \end{aligned}
 \end{equation}
 \end{paragraph}
