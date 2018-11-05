@@ -63,7 +63,7 @@ S=\frac{1}{2\pi } \int d^2 z \,\,b  \bar{\partial} c
 \end{equation}
 The contraction of $b$ and $c$ field is 
 \begin{equation}
-(b(z)c(\omega)-:b(z)c(\omega):)(-1)^{\#}=\frac{1}{z-\omega}.
+b(z)c(\omega)\,-:b(z)c(\omega):=\frac{1}{z-\omega}.
 \end{equation}
 \begin{paragraph}{a)}
 \begin{equation}
@@ -82,21 +82,24 @@ The full contraction(quartic) part is
 The other terms are(omitting normal ordering symbols for simplicity)
 \begin{equation}
 \begin{aligned}[t]
-c(\omega ) \frac{\partial b(z)}{\partial z} \frac{\partial }{\partial \omega }\frac{1}{z-\omega }+c(z) \frac{\partial b(\omega )}{\partial \omega } \frac{\partial }{\partial z}\frac{1}{z-\omega }=\frac{c(\omega ) b''(\omega )-b'(\omega ) c'(\omega )}{z-\omega }+O\left((z-\omega )^0\right)\\
--\lambda  \frac{\partial }{\partial z}\left(b(z) c(\omega ) \frac{\partial }{\partial \omega }\frac{1}{z-\omega }+\frac{c(z) \frac{\partial b(\omega )}{\partial \omega }}{z-\omega }\right)=\frac{2 \lambda  b(\omega ) c(\omega )}{(z-\omega )^3}+\frac{2 \lambda  c(\omega ) b'(\omega )}{(z-\omega )^2}+O\left((z-\omega )^0\right)\\
--\lambda  \frac{\partial }{\partial \omega }\left(b(\omega ) c(z) \frac{\partial }{\partial z}\frac{1}{z-\omega }+\frac{c(\omega ) \frac{\partial b(z)}{\partial z}}{z-\omega }\right)=\frac{2 \lambda  b(\omega ) c(\omega )}{(z-\omega )^3}+\frac{2 \lambda  b(\omega ) c'(\omega )}{(z-\omega )^2}\\
-+\frac{\lambda  \left(b(\omega ) c''(\omega )-c(\omega ) b''(\omega )\right)}{z-\omega }+O\left((z-\omega )^0\right)\\
-\lambda ^2 \frac{\partial }{\partial z}\frac{\partial }{\partial \omega }\left(\frac{b(\omega ) c(z)}{z-\omega }+\frac{b(z) c(\omega )}{z-\omega }\right)=-\frac{4 \left(\lambda ^2 b(\omega ) c(\omega )\right)}{(z-\omega )^3}+\frac{\lambda ^2 \left(-2 c(\omega ) b'(\omega )-2 b(\omega ) c'(\omega )\right)}{(z-\omega )^2}\\
+c(\omega ) \frac{\partial b(z)}{\partial z} \frac{\partial }{\partial \omega }\frac{1}{z-\omega }+c(z) \frac{\partial b(\omega )}{\partial \omega } \frac{\partial }{\partial z}\frac{1}{z-\omega }=-\frac{2 \left(c(\omega ) b'(\omega )\right)}{(z-\omega )^2}+\frac{-c(\omega ) b''(\omega )-b'(\omega ) c'(\omega )}{z-\omega }\\
++O\left((z-\omega )^0\right)\\
+-\lambda  \frac{\partial }{\partial z}\left(b(z) c(\omega ) \frac{\partial }{\partial \omega }\frac{1}{z-\omega }+\frac{c(z) \frac{\partial b(\omega )}{\partial \omega }}{z-\omega }\right)=\frac{2 \lambda  b(\omega ) c(\omega )}{(z-\omega )^3}+\frac{4 \lambda  c(\omega ) b'(\omega )}{(z-\omega )^2}\\
++\frac{\lambda  \left(2 c(\omega ) b''(\omega )+2 b'(\omega ) c'(\omega )\right)}{z-\omega }+O\left((z-\omega )^0\right)\\
+-\lambda  \frac{\partial }{\partial \omega }\left(b(\omega ) c(z) \frac{\partial }{\partial z}\frac{1}{z-\omega }+\frac{c(\omega ) \frac{\partial b(z)}{\partial z}}{z-\omega }\right)=-\frac{2 (\lambda  b(\omega ) c(\omega ))}{(z-\omega )^3}+\frac{\lambda  \left(2 c(\omega ) b'(\omega )-2 b(\omega ) c'(\omega )\right)}{(z-\omega )^2}\\
++\frac{\lambda  \left(c(\omega ) b''(\omega )-b(\omega ) c''(\omega )\right)}{z-\omega }+O\left((z-\omega )^0\right)\\
+\lambda ^2 \frac{\partial }{\partial z}\frac{\partial }{\partial \omega }\left(\frac{b(\omega ) c(z)}{z-\omega }+\frac{b(z) c(\omega )}{z-\omega }\right)=-\frac{4 \left(\lambda ^2 c(\omega ) b'(\omega )\right)}{(z-\omega )^2}+\frac{\lambda ^2 \left(-2 c(\omega ) b''(\omega )-2 b'(\omega ) c'(\omega )\right)}{z-\omega }\\
 +O\left((z-\omega )^0\right)
 \end{aligned}
 \end{equation}
 In conclusion, we have
 \begin{equation}
 \begin{aligned}[t]
-T(z)T(\omega)\sim \frac{-6 (\lambda -1) \lambda -1}{(z-\omega )^4}-\frac{4 ((\lambda -1) \lambda  b(\omega ) c(\omega ))}{(z-\omega )^3}-\frac{2 \left((\lambda -1) \lambda  \left(c(\omega ) b'(\omega )+b(\omega ) c'(\omega )\right)\right)}{(z-\omega )^2}\\
-+\frac{-(\lambda -1) c(\omega ) b''(\omega )-b'(\omega ) c'(\omega )+\lambda  b(\omega ) c''(\omega )}{z-\omega }
+T(z)T(\omega)\sim \frac{-6 (\lambda -1) \lambda -1}{(z-\omega )^4}-\frac{2 \left((\lambda -1) (2 \lambda -1) c(\omega ) b'(\omega )+\lambda  b(\omega ) c'(\omega )\right)}{(z-\omega )^2}\\
+\frac{((3-2 \lambda ) \lambda -1) c(\omega ) b''(\omega )+(-2 (\lambda -1) \lambda -1) b'(\omega ) c'(\omega )-\lambda  b(\omega ) c''(\omega )}{z-\omega }
 \end{aligned}
 \end{equation}
+???Shouldn't $T(z)T(\omega) \sim \frac{-6 (\lambda -1) \lambda -1}{(z-\omega )^4}+\frac{2T(\omega)}{(z-\omega)^2}+\frac{\partial T(\omega)}{z-\omega}$? I only noticed this contradiction in the last minute but could not make it right. 
 \end{paragraph}
 \begin{paragraph}{b)}
 \begin{equation}
@@ -104,12 +107,18 @@ T(z)T(\omega)\sim \frac{-6 (\lambda -1) \lambda -1}{(z-\omega )^4}-\frac{4 ((\la
 T(z)=\sum\limits_{m=-\infty}^{\infty}\frac{L_m}{z^{m+2}}\,\, ,\qquad L_m=\frac{1}{2\pi i}\oint dz \,\, z^{m+1}T(z)
 \end{aligned}
 \end{equation}
-We can just expand $T(z)$ in terms of $b$ and $c$ modes and pick up the power $-(m+2)$ terms.
+We can just expand $T(z)$ in terms of $b$ and $c$ modes and pick up the power $-(m+2)$ terms for $m\neq 0$.
 \begin{equation}
 \begin{aligned}[t]
-T(z)= : (\partial_z b) c(z): - \lambda \partial_z : b c (z):=\sum\limits_l\sum\limits_k :\frac{-(k+\lambda)b_k}{z^{k+\lambda+1}}\frac{c_l}{z^{l+1-\lambda}}:\\
--:\lambda(\frac{-(k+\lambda)b_k}{z^{k+\lambda+1}}\frac{c_l}{z^{l+1-\lambda}}+\frac{b_k}{z^{k+\lambda}}\frac{-(l+1-\lambda)c_l}{z^{l+2-\lambda}}):
+T(z)&= : (\partial_z b) c(z): - \lambda \partial_z : b c (z):=\sum\limits_l\sum\limits_k :\frac{-(k+\lambda):b_k}{z^{k+\lambda+1}}\frac{c_l:}{z^{l+1-\lambda}}:\\
+&\qquad-:\lambda(\frac{-(k+\lambda):b_k}{z^{k+\lambda+1}}\frac{c_l:}{z^{l+1-\lambda}}+\frac{:b_k}{z^{k+\lambda}}\frac{-(l+1-\lambda)c_l:}{z^{l+2-\lambda}}):\\
+(\text{setting  }l=m-k)&=\sum\limits_{m}\sum\limits_{k}\frac{:b_k c_{m-k:}}{z^{m+2}}(-(k+\lambda)+\lambda(k+\lambda)+\lambda(m-k+1-\lambda))\\
+&=\sum\limits_{m}\sum\limits_{k}\frac{:b_k c_{m-k}:}{z^{m+2}}(\lambda  m-k)
 \end{aligned}
 \end{equation}
+It is easy to read off $L_m$ from above as $L_m=\sum\limits_{k}(\lambda  m-k):b_k c_{m-k}:$. For $m=0$, an appropriate normal ordering constant should be included: $L_0=\sum\limits_{k}  -k:b_k c_{-k}:+\frac{1}{2}\lambda(1-\lambda)$
+\end{paragraph}
+\begin{paragraph}{c)}
+
 \end{paragraph}
 \end{document}
