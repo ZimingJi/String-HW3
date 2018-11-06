@@ -2,6 +2,7 @@
  
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amsthm,amssymb}
+\usepackage{physics}
  
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\R}{\mathbb{R}}
@@ -116,9 +117,42 @@ T(z)&= : (\partial_z b) c(z): - \lambda \partial_z : b c (z):=\sum\limits_l\sum\
 &=\sum\limits_{m}\sum\limits_{k}\frac{:b_k c_{m-k}:}{z^{m+2}}(\lambda  m-k)
 \end{aligned}
 \end{equation}
-It is easy to read off $L_m$ from above as $L_m=\sum\limits_{k}(\lambda  m-k):b_k c_{m-k}:$. For $m=0$, an appropriate normal ordering constant should be included: $L_0=\sum\limits_{k}  -k:b_k c_{-k}:+\frac{1}{2}\lambda(1-\lambda)$. ???why? It seems to me that there is no such constant.
+It is easy to read off $L_m$ from above as $L_m=\sum\limits_{k}(\lambda  m-k):b_k c_{m-k}:$. For $m=0$, an appropriate normal ordering constant should be included: $L_0=\sum\limits_{k}  k(c_{-k}b_k+b_{-k}c_k) -k$. 
 \end{paragraph}
 \begin{paragraph}{c)}
-
+\begin{equation}
+\begin{aligned}[t]
+[L_m,b_n]=[\sum\limits_{k}(\lambda  m-k):b_k c_{m-k}:,b_n]\\
+=((\lambda-1)m-n)[:b_{m+n}c_{-n}:,b_n]=((\lambda-1)m-n)b_{m+n}
+\end{aligned}
+\end{equation}
+\begin{equation}
+\begin{aligned}[t]
+[L_m,c_n]=[\sum\limits_{k}(\lambda  m-k):b_k c_{m-k}:,c_n]=(\lambda m+n)[:b_{-n}c_{m+n}:,c_n]=(\lambda m+n)c_{m+n}
+\end{aligned}
+\end{equation}
+\end{paragraph}
+\begin{paragraph}{d)}
+Because $c(z)\ket{1}$ has no pole at $z\to 0$, $c_m\ket{1}$ has to be zero for $m>\lambda-1$. Because $b(z)\ket{1}$ has no pole at $z\to 0$, $b_m\ket{1}$ has to be zero for $m>-\lambda$.
+\end{paragraph}
+\begin{paragraph}{e)}
+\begin{equation}
+\begin{aligned}[t]
+L_0\ket{1}&=(\sum\limits_{k>0}k(c_{-k}b_k+b_{-k}c_k)+a^g)\ket{1}\\
+&=(\sum\limits_1^{[-\lambda]}kc_{-k}b_k+\sum\limits_1^{[\lambda-1]}kb_{-k}c_k+a^g)\ket{1}\\
+&=(\{\frac{1+[-\lambda]}{2}[-\lambda],\,\text{if }\lambda\leq -1;\,0 \text{ otherwise }\}\\
+&+\{\frac{1+[\lambda-1]}{2}[\lambda-1],\,\text{if }\lambda\geq 2;\,0 \text{ otherwise }\}+a^g)\ket{1}
+\end{aligned}
+\end{equation}
+For $L_1$, exchanging $b$ and $c$ operators does not give extra constant term. So the only non zero terms are in the region $2-\lambda\leq k\leq -\lambda, k\in \mathbb{Z}$ which is an empty set. Thus,
+\begin{equation}
+\begin{aligned}[t]
+L_1\ket{1}&=(\sum\limits_{k}(\lambda- k):b_{k}c_{1-k}:))\ket{1}=0
+\end{aligned}
+\end{equation}
+For $L_{-1}$ the non zero term is $k=-\lambda$. If $\lambda\not\in\mathbb{Z}$, it is empty; if $\lambda\in\mathbb{Z}$, the only term left is still zero. So $L_{-1}\ket{1}=0$.
+\end{paragraph}
+\begin{paragraph}{f)}
+Remember that $[L_0,b_n]=-nb_n$ and $[L_0,c_n]=nc_n$
 \end{paragraph}
 \end{document}
