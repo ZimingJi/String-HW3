@@ -153,7 +153,7 @@ L_1\ket{1}&=(\sum\limits_{k}(\lambda- k):b_{k}c_{1-k}:))\ket{1}=0
 For $L_{-1}$ the non zero term is $k=-\lambda$. If $\lambda\not\in\mathbb{Z}$, it is empty; if $\lambda\in\mathbb{Z}$, the only term left is still zero. So $L_{-1}\ket{1}=0$.
 \end{paragraph}
 \begin{paragraph}{f)}
-Remember that $[L_0,b_n]=-nb_n$ and $[L_0,c_n]=nc_n$
+Remember that $[L_0,b_n]=-nb_n$ and $[L_0,c_n]=nc_n$...not finished
 \end{paragraph}
 \section{Problem 3}
 $L_{-1}\ket{0;0}=0$ then this $\ket{0;0}$ is the identity state($h=0$). For $\ket{0;k}$ the weight is $\frac{k^2}{2}$.
@@ -161,8 +161,69 @@ $L_{-1}\ket{0;0}=0$ then this $\ket{0;0}$ is the identity state($h=0$). For $\ke
 \begin{equation}
 \begin{aligned}[t]
 \bra{k;0}(L_{2}+aL_{1}^2)(L_{-2}+aL_{-1}^2)\ket{0;k}=0\\
-\bra{k;0}L_{2}L_{-2}+aL_2 L_{-1}^2+aL_1^2 L_{-2}+a^2 L_1^2 L_{-1}^2\ket{0;k}=0
+\bra{k;0}L_{2}L_{-2}+aL_2 L_{-1}^2+aL_1^2 L_{-2}+a^2 L_1^2 L_{-1}^2\ket{0;k}=0\\
+\bra{k;0}4h+\frac{c}{2}+6ah+6ah+a^2 4h(2h+1)\ket{0;k}=0\\
+8 a^2 h^2+\left(4 a^2+12 a+4\right) h+\frac{c}{2}=0
 \end{aligned}
 \end{equation}
+Then we have 
+\begin{equation}
+\begin{aligned}[t]
+\frac{k^2}{2}= -\frac{a (a+3)+\sqrt{(a+1)^2 (a (a+4)+1)}+1}{4 a^2}\\
+\text{or  }\frac{k^2}{2}=\frac{-a (a+3)+\sqrt{(a+1)^2 (a (a+4)+1)}-1}{4 a^2}
+\end{aligned}
+\end{equation}
+\end{paragraph}
+\begin{paragraph}{b)}
+The norm of the state is $(2+2b^2)\bra{k;0}\ket{0;k}$, which is positive for real coefficient $b$. For its weight, we have
+\begin{equation}
+\begin{aligned}[t]
+L_0(\alpha_{-2}+b\alpha_{-1}^2)\ket{0;k}=(2+h)\alpha_{-2}+(2b+hb)\alpha_{-1}^2\ket{0;k}
+\end{aligned}
+\end{equation}
+So the weight is $2+h=2+\frac{k^2}{2}$. For $L_1\ket{\phi}=0$, $b=\frac{-1}{k}$.
+\end{paragraph}
+\section{Problem 4}
+The matrix is 
+\begin{equation}
+\left(
+\begin{array}{ccc}
+ L_3 L_{-3} & L_3 L_{-2} L_{-1} & L_3 L_{-1}^3 \\
+ L_1 L_2 L_{-3} & L_1 L_2 L_{-2} L_{-1} & L_1 L_2 L_{-1}^3 \\
+ L_1^3 L_{-3} & L_1^3 L_{-2} L_{-1} & L_1^3 L_{-1}^3 \\
+\end{array}
+\right)
+\end{equation}
+Evaluating this with the highest-weight state, we have $\bra{\phi}M\ket{\phi}=$
+\begin{equation}
+\left(
+\begin{array}{ccc}
+ 2 c+6 h & 10 h & 16 h \\
+ 10 h & 8 h^2+c h+8 h & 36 h^2+12 h \\
+ 16 h & 36 h^2+12 h & 4 h (6 h+6) (2 h+1) \\
+\end{array}
+\right)
+\end{equation}
+If the determinant is zero, then there is combinations of the basis that give zero, or there exists null state.
+\begin{equation}
+\begin{aligned}[t]
+\text{det }M=16 h^2 (3 c^2 (h+1) (2 h+1)+c (h (3 h (22 h-5)-19)+6)\\
++2 h (h (3 h (24 h-71)+53)-10))
+\end{aligned}
+\end{equation}
+Difficult to solve?
+\section{Problem 5}
+\begin{paragraph}{a)}
+Using the conformal Ward identity
+\begin{equation}
+\delta_\epsilon\langle A\rangle=-\frac{1}{2\pi i}\oint\,\,dz \,\epsilon(z)\langle T(z)A\rangle=0
+\end{equation}
+When the infinitesimal transformations are $\epsilon\sim O(1)+O(z)+O(z^2)$. These means the correlation function is invariant under all the conformal transformations.
+\end{paragraph}
+\begin{paragraph}{b)}
+\begin{equation}
+\langle A_1(z_1,\bar{z}_1)A_2(z_2,\bar{z}_2)\rangle=\frac{C_{12}}{(z_1-z_2)^{2h}(\bar{z}_1-\bar{z}_2)^{2\bar{h}}} \text{,  if }h_1=h_2=h\text{ and }\bar{h}_1=\bar{h}_2=\bar{h}
+\end{equation}
+If the conformal dimensions are different then the correlation function vanishes.
 \end{paragraph}
 \end{document}
